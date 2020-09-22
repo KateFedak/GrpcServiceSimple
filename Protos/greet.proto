@@ -17,7 +17,7 @@ message Empty {}
 message Employee {
     int32 EmployeeId = 1;
     string firstname = 2;
-    int32 lastname = 3;
+    string lastname = 3;
     float salary = 4;
 }
 message EmployeeList {
