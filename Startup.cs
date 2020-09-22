@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using GrpcServiceSimple;
 
 namespace GrpcServiceSimple
 {
@@ -17,6 +18,7 @@ namespace GrpcServiceSimple
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+            services.AddSingleton<GreeterService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
